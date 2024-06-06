@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report</title>
+</head>
+<body>
+    <h1>Report</h1>
+    <p>Best student: {{ best_student.name }}</p>
+    <p>Worst student: {{ worst_student.name }}</p>
+    <h2>Average Grades</h2>
+    <ul>
+        {% for subject, avg_grade in average_grades.items %}
+        <li>{{ subject.name }}: {{ avg_grade }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
